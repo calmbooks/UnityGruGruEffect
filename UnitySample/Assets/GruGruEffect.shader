@@ -8,7 +8,6 @@ Shader "Custom/GruGruEffect" {
 
                 #pragma vertex vert_img
                 #pragma fragment frag
-                #pragma target 3.0
 
                 #define PI 3.14159
 
