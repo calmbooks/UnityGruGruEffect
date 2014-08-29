@@ -8,3 +8,6 @@ to post effect
 to GameObject
 
 <img src="https://raw.githubusercontent.com/wiki/calmbooks/UnityGruGruEffect/images/toGameObject.png" alt="post effect" width="500" />
+
+### DEMO
+<a href="http://calmbooks.com/UnitySamples/GruGruEffect">http://calmbooks.com/UnitySamples/GruGruEffect</a>
