@@ -1,9 +1,6 @@
 Shader "Custom/GruGruEffect" {
 
     SubShader {
-            Tags { "RenderType"="Opaque" }
-            LOD 100
-
         Pass {
             CGPROGRAM
 
@@ -16,14 +13,14 @@ Shader "Custom/GruGruEffect" {
 
                 float4 frag( v2f_img i ) : COLOR {
 
-                    float2 vec = i.uv.xy - float2(0.5, 0.5);
+                    float2 vec = i.uv.xy - float2(0.5);
 
                     float l = length(vec);
                     float r = atan2(vec.y, vec.x) + PI; // 0-2π
                     float t = _Time.y*10;
                     float c = 1-sin(l*70+r+t);
 
-                    float3 rgb = float3(c,c,c);
+                    float3 rgb = float3(c);
 
                     return float4(rgb,1.0);
                 }
